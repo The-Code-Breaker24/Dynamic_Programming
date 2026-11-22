@@ -14,7 +14,7 @@ int main(){
     int n;
     cout<<"Enter number : ";
     cin>>n;
-    vector<int>f(n);
+    vector<int>f(n+1,-1);
     cout<<fibtabDP(n,f);
     return 0;
 }
