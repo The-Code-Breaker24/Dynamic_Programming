@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int climbing_stairs(int n,vector<int>&v){
+int climbing_stairs_tb(int n,vector<int>&v){
     v[0]=1;
     v[1]=1;
     for(int i=2;i<=n;i++){
@@ -13,7 +13,7 @@ int main(){
     int n;
     cin>>n;
     vector<int>v(n+1);
-    int x=climbing_stairs(n,v);
+    int x=climbing_stairs_tb(n,v);
     cout<<x;
     return 0;
 }
